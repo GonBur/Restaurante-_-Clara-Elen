@@ -1,0 +1,48 @@
+/* ==========================================================================
+   ClaraElen — Ajustes Responsive (360px a 1440px+)
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  .ce-navbar .navbar-collapse {
+    background: #191520;
+    border: 1px solid var(--ce-border);
+    border-radius: var(--ce-radius-md);
+    padding: 1rem;
+    margin-top: 0.75rem;
+  }
+
+  .hero-restaurant {
+    padding: 3.75rem 0 3.5rem;
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .btn-ce-primary,
+  .btn-ce-outline {
+    width: 100%;
+  }
+
+  .hero-floating-badge {
+    position: static;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.45rem;
+  }
+}

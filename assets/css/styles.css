@@ -1,0 +1,514 @@
+/* ==========================================================================
+   ClaraElen — Sistema de Diseño Gastronómico
+   Paleta: Carbón Profundo, Morado ClaraElen (#7e22ce / #9333ea), Lavanda y Marfil
+   ========================================================================== */
+
+:root {
+  --ce-bg-primary: #120f16;
+  --ce-bg-secondary: #191520;
+  --ce-bg-card: #221c2c;
+  --ce-border: rgba(168, 85, 247, 0.22);
+  --ce-border-strong: rgba(192, 132, 252, 0.5);
+
+  --ce-text-primary: #faf7fc;
+  --ce-text-secondary: #ddd5e6;
+  --ce-text-muted: #b0a6bc;
+
+  --ce-purple: #9333ea;
+  --ce-purple-bright: #c084fc;
+  --ce-purple-dark: #6b21a8;
+  --ce-emerald: #10b981;
+  --ce-gradient-brand: linear-gradient(135deg, #a855f7 0%, #6b21a8 100%);
+
+  --ce-font-serif: 'Playfair Display', Georgia, serif;
+  --ce-font-heading: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --ce-font-body: 'Inter', -apple-system, sans-serif;
+
+  --ce-radius-sm: 0.5rem;
+  --ce-radius-md: 0.875rem;
+  --ce-radius-lg: 1.25rem;
+  --ce-shadow-lg: 0 22px 50px rgba(0, 0, 0, 0.62);
+  --ce-transition: 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ce-font-body);
+  background-color: var(--ce-bg-primary);
+  color: var(--ce-text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, .serif-title {
+  font-family: var(--ce-font-serif);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--ce-font-heading);
+  font-weight: 700;
+}
+
+a {
+  color: var(--ce-purple-bright);
+  text-decoration: none;
+  transition: color var(--ce-transition);
+}
+
+a:hover {
+  color: #e9d5ff;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  background: var(--ce-purple-bright);
+  color: #120f16;
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--ce-radius-sm);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ce-purple-bright);
+  outline-offset: 3px;
+}
+
+.section-padding {
+  padding: 5.5rem 0;
+}
+
+.section-alt {
+  background-color: var(--ce-bg-secondary);
+  border-top: 1px solid var(--ce-border);
+  border-bottom: 1px solid var(--ce-border);
+}
+
+.eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.38rem 0.95rem;
+  font-family: var(--ce-font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ce-purple-bright);
+  background: rgba(147, 51, 234, 0.16);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn-ce-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background: var(--ce-gradient-brand);
+  color: #ffffff;
+  font-family: var(--ce-font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.65rem;
+  border-radius: var(--ce-radius-md);
+  border: 1px solid rgba(216, 180, 254, 0.28);
+  box-shadow: 0 10px 28px rgba(107, 33, 168, 0.42);
+  transition: transform var(--ce-transition), filter var(--ce-transition);
+}
+
+.btn-ce-primary:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn-ce-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background: rgba(34, 28, 44, 0.78);
+  color: var(--ce-text-primary);
+  font-family: var(--ce-font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.65rem;
+  border-radius: var(--ce-radius-md);
+  border: 1px solid var(--ce-border-strong);
+  transition: background var(--ce-transition), transform var(--ce-transition);
+}
+
+.btn-ce-outline:hover {
+  color: #ffffff;
+  background: rgba(147, 51, 234, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Topbar redes sociales */
+.social-topbar {
+  background: #0c0910;
+  border-bottom: 1px solid var(--ce-border);
+  font-size: 0.82rem;
+  color: var(--ce-text-muted);
+  padding: 0.45rem 0;
+}
+
+.social-topbar a {
+  color: var(--ce-text-secondary);
+}
+
+.social-topbar a:hover {
+  color: var(--ce-purple-bright);
+}
+
+/* Navbar y Logo ClaraElen */
+.ce-navbar {
+  background: rgba(18, 15, 22, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--ce-border);
+  padding: 0.65rem 0;
+  transition: background var(--ce-transition), box-shadow var(--ce-transition);
+}
+
+.ce-navbar.scrolled {
+  background: rgba(18, 15, 22, 0.98);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.58);
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--ce-border-strong);
+  background: #f3f2f6;
+  flex-shrink: 0;
+}
+
+.brand-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-family: var(--ce-font-serif);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--ce-text-primary);
+}
+
+.brand-tagline {
+  font-family: var(--ce-font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ce-purple-bright);
+}
+
+.ce-navbar .nav-link {
+  color: var(--ce-text-secondary);
+  font-family: var(--ce-font-heading);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: var(--ce-radius-sm);
+}
+
+.ce-navbar .nav-link:hover,
+.ce-navbar .nav-link.active {
+  color: var(--ce-purple-bright);
+  background: rgba(147, 51, 234, 0.14);
+}
+
+/* Hero */
+.hero-restaurant {
+  position: relative;
+  padding: 5.5rem 0 5rem;
+  background:
+    radial-gradient(circle at 80% 25%, rgba(147, 51, 234, 0.22) 0%, transparent 48%),
+    radial-gradient(circle at 15% 85%, rgba(107, 33, 168, 0.16) 0%, transparent 45%),
+    var(--ce-bg-primary);
+}
+
+.hero-title {
+  font-size: clamp(2.25rem, 4.5vw, 3.8rem);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.hero-image-frame {
+  position: relative;
+  border-radius: var(--ce-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--ce-border-strong);
+  box-shadow: var(--ce-shadow-lg);
+}
+
+.hero-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-floating-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(18, 15, 22, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ce-border-strong);
+  border-radius: var(--ce-radius-md);
+  padding: 0.9rem 1.15rem;
+}
+
+.logo-showcase-card {
+  background: var(--ce-bg-card);
+  border: 1px solid var(--ce-border);
+  border-radius: var(--ce-radius-lg);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.logo-showcase-img {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--ce-radius-md);
+  border: 2px solid var(--ce-border-strong);
+}
+
+/* Cards */
+.ce-card {
+  background: var(--ce-bg-card);
+  border: 1px solid var(--ce-border);
+  border-radius: var(--ce-radius-lg);
+  overflow: hidden;
+  height: 100%;
+  transition: transform var(--ce-transition), border-color var(--ce-transition), box-shadow var(--ce-transition);
+}
+
+.ce-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--ce-border-strong);
+  box-shadow: var(--ce-shadow-lg);
+}
+
+/* Carta / Menú */
+.menu-filter-btn {
+  background: var(--ce-bg-card);
+  color: var(--ce-text-secondary);
+  border: 1px solid var(--ce-border);
+  border-radius: 999px;
+  padding: 0.5rem 1.15rem;
+  font-family: var(--ce-font-heading);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--ce-transition);
+}
+
+.menu-filter-btn:hover,
+.menu-filter-btn.active {
+  background: var(--ce-gradient-brand);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.dish-img-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #0c0910;
+}
+
+.dish-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.ce-card:hover .dish-img-wrap img {
+  transform: scale(1.05);
+}
+
+.dish-price-tag {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: rgba(18, 15, 22, 0.92);
+  color: var(--ce-purple-bright);
+  font-family: var(--ce-font-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--ce-border-strong);
+}
+
+.dish-tag-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: var(--ce-purple);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* Redes Sociales Cards */
+.social-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.65rem;
+  background: var(--ce-bg-card);
+  border: 1px solid var(--ce-border);
+  border-radius: var(--ce-radius-lg);
+  color: var(--ce-text-primary);
+  height: 100%;
+  transition: transform var(--ce-transition), border-color var(--ce-transition);
+}
+
+.social-card:hover {
+  color: var(--ce-text-primary);
+  transform: translateY(-4px);
+  border-color: var(--ce-purple-bright);
+}
+
+.social-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  background: rgba(147, 51, 234, 0.18);
+  color: var(--ce-purple-bright);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+}
+
+/* Inputs Formulario */
+.ce-input {
+  background-color: #120f16;
+  border: 1px solid var(--ce-border);
+  color: var(--ce-text-primary);
+  border-radius: var(--ce-radius-sm);
+  padding: 0.75rem 0.95rem;
+}
+
+.ce-input:focus {
+  background-color: #120f16;
+  border-color: var(--ce-purple-bright);
+  color: var(--ce-text-primary);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.22);
+}
+
+.ce-input::placeholder {
+  color: var(--ce-text-muted);
+}
+
+/* Footer */
+.ce-footer {
+  background: #0c0910;
+  border-top: 1px solid var(--ce-border);
+  padding: 4.5rem 0 2rem;
+  color: var(--ce-text-muted);
+}
+
+.ce-footer h3 {
+  font-size: 1rem;
+  color: var(--ce-text-primary);
+  margin-bottom: 1.1rem;
+}
+
+.ce-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ce-footer ul li {
+  margin-bottom: 0.55rem;
+}
+
+.ce-footer ul a {
+  color: var(--ce-text-muted);
+  font-size: 0.92rem;
+}
+
+.ce-footer ul a:hover {
+  color: var(--ce-purple-bright);
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.4rem;
+  right: 1.4rem;
+  z-index: 1040;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #10b981;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  box-shadow: 0 10px 26px rgba(16, 185, 129, 0.42);
+  transition: transform var(--ce-transition), background var(--ce-transition);
+}
+
+.whatsapp-float:hover {
+  color: #ffffff;
+  background: #059669;
+  transform: scale(1.07);
+}

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   ClaraElen — Animaciones de Scroll & Reduced Motion
+   ========================================================================== */
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal-up,
+  .ce-card,
+  .dish-img-wrap img,
+  .btn-ce-primary,
+  .btn-ce-outline,
+  .whatsapp-float {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

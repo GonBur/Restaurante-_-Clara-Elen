@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClaraElen | Restaurante, Cocina Peruana &amp; Reservas Online</title>
+  <meta name="description" content="Descubre la carta de ClaraElen: ceviches frescos, platos criollos, parrilla, coctelería, ambientes, redes sociales y reservas online.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.claraelen-restaurante.pe/">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:site_name" content="ClaraElen">
+  <meta property="og:title" content="ClaraElen | Restaurante &amp; Reservas Online">
+  <meta property="og:description" content="Explora nuestra carta gastronómica con precios, horarios, ubicación y reserva tu mesa al instante.">
+  <meta property="og:url" content="https://www.claraelen-restaurante.pe/">
+  <meta property="og:image" content="https://www.claraelen-restaurante.pe/assets/img/logo-claraelen.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ClaraElen | Restaurante">
+  <meta name="twitter:description" content="Platos de temporada, parrilla, barra y reservas en ClaraElen.">
+
+  <link rel="icon" type="image/webp" href="assets/img/favicon-claraelen.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- CSS Modular -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Datos Estructurados JSON-LD (Schema.org Restaurant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ClaraElen",
+    "image": "https://www.claraelen-restaurante.pe/assets/img/logo-claraelen.jpg",
+    "servesCuisine": ["Peruana", "Criolla", "Parrilla", "Mariscos"],
+    "priceRange": "$$",
+    "telephone": "+51 977 555 420",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Principal 480 (Editable)",
+      "addressLocality": "Trujillo",
+      "addressRegion": "La Libertad",
+      "addressCountry": "PE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/claraelen.restaurante",
+      "https://www.facebook.com/claraelen.restaurante",
+      "https://www.tiktok.com/@claraelen.restaurante"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Barra superior de horarios y redes sociales -->
+  <div class="social-topbar">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <span><i class="bi bi-clock me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Lun – Dom: 12:00 p. m. a 11:00 p. m.</span>
+        <span class="d-none d-md-inline"><i class="bi bi-geo-alt me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Restaurante ClaraElen</span>
+      </div>
+      <div class="d-flex align-items-center gap-3" aria-label="Redes sociales de ClaraElen">
+        <a href="https://www.instagram.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="Instagram de ClaraElen"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="Facebook de ClaraElen"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/@claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ClaraElen"><i class="bi bi-tiktok"></i></a>
+        <a href="https://wa.me/51977555420" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de ClaraElen"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar Principal -->
+  <header id="header" class="ce-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="#inicio" aria-label="Inicio ClaraElen">
+          <span class="brand-logo-box">
+            <img src="assets/img/logo-claraelen-crop.webp" alt="Logo ClaraElen" width="48" height="48">
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-name">ClaraElen</span>
+            <span class="brand-tagline">Restaurante</span>
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nuestra Casa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#carta">Carta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ambientes">Ambientes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#redes">Redes Sociales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          </ul>
+          <div class="d-flex">
+            <a href="#reservas" class="btn-ce-primary py-2 px-3">
+              <i class="bi bi-calendar2-check" aria-hidden="true"></i>
+              <span>Reservar Mesa</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-restaurant">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <span class="eyebrow-badge">
+              <i class="bi bi-sparkles" aria-hidden="true"></i>
+              <span>Restaurante ClaraElen</span>
+            </span>
+            <h1 class="hero-title">
+              Bienvenidos a ClaraElen: sabor, encuentro y buena mesa.
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Disfruta de nuestra carta gastronómica preparada al momento, carnes a la brasa, platos criollos, coctelería de barra y atención cercana para cada visita.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#reservas" class="btn-ce-primary">
+                <span>Reservar Mesa</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="#carta" class="btn-ce-outline">
+                <span>Ver Carta &amp; Precios</span>
+                <i class="bi bi-book" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="d-flex flex-wrap gap-4 small text-secondary">
+              <span><i class="bi bi-bag-check me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Delivery &amp; Recojo</span>
+              <span><i class="bi bi-people me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Salón y terraza</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-up delay-100">
+            <div class="hero-image-frame">
+              <img src="assets/img/hero-claraelen.webp" alt="Mesa gastronómica del restaurante ClaraElen" width="720" height="405">
+              <div class="hero-floating-badge d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="assets/img/logo-claraelen-crop.webp" alt="Emblema ClaraElen" width="44" height="44" class="rounded-2 border border-light border-opacity-25 bg-light">
+                  <div>
+                    <strong class="d-block text-white">ClaraElen Restaurante</strong>
+                    <span class="small text-secondary">Platos al momento, parrilla y barra</span>
+                  </div>
+                </div>
+                <a href="#carta" class="btn btn-sm btn-light fw-bold text-dark">Ver Carta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Identidad y Nuestra Casa -->
+    <section id="nosotros" class="section-padding section-alt">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal-up">
+            <div class="logo-showcase-card text-center">
+              <img src="assets/img/logo-claraelen.jpg" alt="Logotipo oficial de ClaraElen" class="logo-showcase-img mb-3">
+              <h3 class="h4 mb-1">ClaraElen</h3>
+              <p class="small text-secondary mb-0">Identidad visual y cocina con sello propio para almuerzos, cenas y celebraciones.</p>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal-up delay-100">
+            <span class="eyebrow-badge">Nuestra Historia</span>
+            <h2 class="display-6 mb-3">Una mesa pensada para compartir en ClaraElen</h2>
+            <p class="text-secondary mb-3">
+              En <strong>ClaraElen</strong> cuidamos cada receta desde la selección de ingredientes frescos hasta el servicio en mesa. Combinamos sabores clásicos, preparaciones a la brasa y opciones variadas para toda la familia.
+            </p>
+            <p class="text-secondary mb-4">
+              Puedes consultar nuestra carta interactiva, pedir por WhatsApp o reservar tu mesa con anticipación en pocos segundos.
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border border-light border-opacity-10 bg-dark bg-opacity-50">
+                  <strong class="d-block fs-5" style="color: var(--ce-purple-bright);">Preparación Al Día</strong>
+                  <span class="small text-secondary">Ingredientes frescos y sazón constante.</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border border-light border-opacity-10 bg-dark bg-opacity-50">
+                  <strong class="d-block fs-5" style="color: var(--ce-purple-bright);">Atención Directa</strong>
+                  <span class="small text-secondary">Reservas y pedidos ágiles por WhatsApp.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carta Gastronómica Interactiva -->
+    <section id="carta" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal-up">
+          <span class="eyebrow-badge">Carta &amp; Precios</span>
+          <h2 class="display-6 mb-3">Carta de ClaraElen</h2>
+          <p class="text-secondary mx-auto" style="max-width: 62ch;">
+            Filtra por categoría o busca un plato para ordenar directamente por WhatsApp.
+          </p>
+        </div>
+
+        <div class="row g-3 align-items-center justify-content-between mb-4 reveal-up">
+          <div class="col-lg-8">
+            <div class="d-flex flex-wrap gap-2" role="group" aria-label="Categorías de la carta">
+              <button type="button" class="menu-filter-btn active" data-category="all" aria-pressed="true">Todos</button>
+              <button type="button" class="menu-filter-btn" data-category="entradas" aria-pressed="false">Entradas &amp; Ceviches</button>
+              <button type="button" class="menu-filter-btn" data-category="criollos" aria-pressed="false">Fondos Criollos</button>
+              <button type="button" class="menu-filter-btn" data-category="parrilla" aria-pressed="false">Parrilla &amp; Brasas</button>
+              <button type="button" class="menu-filter-btn" data-category="bebidas" aria-pressed="false">Cócteles &amp; Bebidas</button>
+              <button type="button" class="menu-filter-btn" data-category="postres" aria-pressed="false">Postres</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <label for="menuSearch" class="visually-hidden">Buscar plato o ingrediente</label>
+            <div class="input-group">
+              <span class="input-group-text bg-dark border-secondary" style="color: var(--ce-purple-bright);"><i class="bi bi-search" aria-hidden="true"></i></span>
+              <input type="search" id="menuSearch" class="form-control ce-input" placeholder="Buscar ceviche, lomo, bife, pisco...">
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="menuGrid"></div>
+
+        <div id="menuEmptyState" class="text-center py-5 d-none">
+          <p class="text-secondary mb-0">No encontramos platos con ese criterio. Prueba con otro término.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambientes -->
+    <section id="ambientes" class="section-padding section-alt">
+      <div class="container">
+        <div class="text-center mb-5 reveal-up">
+          <span class="eyebrow-badge">Nuestros Espacios</span>
+          <h2 class="display-6 mb-3">Ambientes de ClaraElen</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal-up">
+            <article class="ce-card">
+              <div class="dish-img-wrap">
+                <img src="assets/img/salon-claraelen.webp" alt="Salón principal de ClaraElen" width="480" height="360" loading="lazy">
+              </div>
+              <div class="p-4">
+                <h3 class="h5" style="color: var(--ce-purple-bright);">Salón Principal</h3>
+                <p class="small text-secondary mb-0">Mesas cómodas y ambiente acogedor para almuerzos en familia, parejas y grupos.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 reveal-up delay-100">
+            <article class="ce-card">
+              <div class="dish-img-wrap">
+                <img src="assets/img/parrilla-claraelen.webp" alt="Zona de parrilla y brasas de ClaraElen" width="480" height="360" loading="lazy">
+              </div>
+              <div class="p-4">
+                <h3 class="h5" style="color: var(--ce-purple-bright);">Terraza &amp; Brasas</h3>
+                <p class="small text-secondary mb-0">Espacio ideal para cenas, reuniones especiales y platos salidos directo de la parrilla.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 reveal-up delay-200">
+            <article class="ce-card">
+              <div class="dish-img-wrap">
+                <img src="assets/img/cocteles-claraelen.webp" alt="Barra y coctelería de ClaraElen" width="480" height="360" loading="lazy">
+              </div>
+              <div class="p-4">
+                <h3 class="h5" style="color: var(--ce-purple-bright);">Barra &amp; Coctelería</h3>
+                <p class="small text-secondary mb-0">Cócteles clásicos y refrescantes para acompañar piqueos y encuentros nocturnos.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redes" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal-up">
+          <span class="eyebrow-badge">Redes Sociales</span>
+          <h2 class="display-6 mb-3">Conecta con ClaraElen en redes sociales</h2>
+          <p class="text-secondary mx-auto" style="max-width: 60ch;">
+            Sigue nuestras novedades, platos de temporada, promociones y atención directa en tus plataformas favoritas.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3 reveal-up">
+            <a href="https://www.instagram.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" class="social-card">
+              <div class="social-icon-circle"><i class="bi bi-instagram" aria-hidden="true"></i></div>
+              <h3 class="h5 mb-1">Instagram</h3>
+              <span class="small mb-2" style="color: var(--ce-purple-bright);">@claraelen.restaurante</span>
+              <p class="small text-secondary mb-3">Fotos de nuestros platos, novedades de carta e historias del día a día.</p>
+              <span class="small fw-bold text-white mt-auto">Ir a Instagram <i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal-up delay-100">
+            <a href="https://www.facebook.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" class="social-card">
+              <div class="social-icon-circle"><i class="bi bi-facebook" aria-hidden="true"></i></div>
+              <h3 class="h5 mb-1">Facebook</h3>
+              <span class="small mb-2" style="color: var(--ce-purple-bright);">/claraelen.restaurante</span>
+              <p class="small text-secondary mb-3">Anuncios especiales, eventos y contacto directo con nuestra comunidad.</p>
+              <span class="small fw-bold text-white mt-auto">Ir a Facebook <i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal-up delay-200">
+            <a href="https://www.tiktok.com/@claraelen.restaurante" target="_blank" rel="noopener noreferrer" class="social-card">
+              <div class="social-icon-circle"><i class="bi bi-tiktok" aria-hidden="true"></i></div>
+              <h3 class="h5 mb-1">TikTok</h3>
+              <span class="small mb-2" style="color: var(--ce-purple-bright);">@claraelen.restaurante</span>
+              <p class="small text-secondary mb-3">Videos cortos de cocina, preparaciones y recomendaciones de la casa.</p>
+              <span class="small fw-bold text-white mt-auto">Ir a TikTok <i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal-up delay-300">
+            <a href="https://wa.me/51977555420?text=Hola%20ClaraElen%2C%20quisiera%20hacer%20una%20consulta%20o%20pedido." target="_blank" rel="noopener noreferrer" class="social-card">
+              <div class="social-icon-circle"><i class="bi bi-whatsapp" aria-hidden="true"></i></div>
+              <h3 class="h5 mb-1">WhatsApp</h3>
+              <span class="small mb-2" style="color: var(--ce-purple-bright);">+51 977 555 420</span>
+              <p class="small text-secondary mb-3">Canal rápido para reservas de mesa, pedidos y consultas generales.</p>
+              <span class="small fw-bold text-white mt-auto">Chatear en WhatsApp <i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservas Online -->
+    <section id="reservas" class="section-padding section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal-up">
+            <span class="eyebrow-badge">Reservas Online</span>
+            <h2 class="display-6 mb-3">Reserva tu mesa en ClaraElen</h2>
+            <p class="text-secondary mb-4">
+              Elige fecha, hora, número de personas y ambiente. Al enviar, se genera tu mensaje listo para confirmar en WhatsApp.
+            </p>
+            <ul class="list-unstyled text-secondary small d-flex flex-column gap-2">
+              <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Confirmación rápida por WhatsApp</li>
+              <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Mesas para parejas, familias y grupos</li>
+              <li><i class="bi bi-check-circle-fill me-2" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Opciones para celebraciones y cumpleaños</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 reveal-up delay-100">
+            <div class="ce-card p-4 p-md-5">
+              <h3 class="h4 mb-4">Datos de tu reserva</h3>
+              <form id="reservationForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="resName" class="form-label small fw-semibold">Nombre y Apellido *</label>
+                    <input type="text" class="form-control ce-input" id="resName" placeholder="Ej. Carla Mendoza" required minlength="2">
+                    <div class="invalid-feedback">Ingresa tu nombre.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="resPhone" class="form-label small fw-semibold">Celular / WhatsApp *</label>
+                    <input type="tel" class="form-control ce-input" id="resPhone" placeholder="Ej. 977 555 420" required minlength="7">
+                    <div class="invalid-feedback">Ingresa un teléfono válido.</div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="resDate" class="form-label small fw-semibold">Fecha *</label>
+                    <input type="date" class="form-control ce-input" id="resDate" required>
+                    <div class="invalid-feedback">Selecciona una fecha.</div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="resTime" class="form-label small fw-semibold">Hora *</label>
+                    <select class="form-select ce-input" id="resTime" required>
+                      <option value="12:30 p. m.">12:30 p. m.</option>
+                      <option value="01:30 p. m." selected>01:30 p. m.</option>
+                      <option value="02:30 p. m.">02:30 p. m.</option>
+                      <option value="07:30 p. m.">07:30 p. m.</option>
+                      <option value="08:30 p. m.">08:30 p. m.</option>
+                      <option value="09:30 p. m.">09:30 p. m.</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="resGuests" class="form-label small fw-semibold">Personas *</label>
+                    <select class="form-select ce-input" id="resGuests" required>
+                      <option value="2 personas">2 personas</option>
+                      <option value="4 personas" selected>4 personas</option>
+                      <option value="6 personas">6 personas</option>
+                      <option value="8 personas">8 personas</option>
+                      <option value="Grupo (+10 personas)">Grupo (+10 personas)</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="resZone" class="form-label small fw-semibold">Ambiente preferido</label>
+                    <select class="form-select ce-input" id="resZone">
+                      <option value="Salón Principal">Salón Principal</option>
+                      <option value="Terraza & Brasas">Terraza &amp; Brasas</option>
+                      <option value="Barra & Coctelería">Barra &amp; Coctelería</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="resNotes" class="form-label small fw-semibold">Observación (opcional)</label>
+                    <input type="text" class="form-control ce-input" id="resNotes" placeholder="Ej. Celebración, silla para niño...">
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-ce-primary w-100">
+                      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                      <span>Confirmar Reserva por WhatsApp</span>
+                    </button>
+                  </div>
+                  <div class="col-12" id="reservationFeedback" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación y Horarios -->
+    <section id="ubicacion" class="section-padding">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5 reveal-up">
+            <div class="ce-card p-4 d-flex flex-column justify-content-between">
+              <div>
+                <span class="eyebrow-badge">Visítanos</span>
+                <h2 class="h3 mb-3">Ubicación &amp; Horarios</h2>
+                <p class="small text-secondary mb-4">
+                  Información de referencia editable para el local de ClaraElen.
+                </p>
+                <ul class="list-unstyled small d-flex flex-column gap-3 mb-4">
+                  <li>
+                    <strong class="d-block" style="color: var(--ce-purple-bright);"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i> Restaurante:</strong>
+                    <span class="text-secondary">ClaraElen — Av. Principal 480</span>
+                  </li>
+                  <li>
+                    <strong class="d-block" style="color: var(--ce-purple-bright);"><i class="bi bi-clock-fill me-1" aria-hidden="true"></i> Horario:</strong>
+                    <span class="text-secondary">Lunes a Domingo: 12:00 p. m. – 11:00 p. m.</span>
+                  </li>
+                  <li>
+                    <strong class="d-block" style="color: var(--ce-purple-bright);"><i class="bi bi-telephone-fill me-1" aria-hidden="true"></i> Teléfono / WhatsApp:</strong>
+                    <a href="tel:+51977555420" class="text-white fw-semibold">+51 977 555 420</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://maps.google.com/?q=ClaraElen" target="_blank" rel="noopener noreferrer" class="btn-ce-outline w-100">
+                <i class="bi bi-map" aria-hidden="true"></i>
+                <span>Ver en Google Maps</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal-up delay-100">
+            <div class="ce-card p-2">
+              <iframe
+                title="Mapa de ubicación ClaraElen"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-79.0500%2C-8.1300%2C-79.0100%2C-8.0950&amp;layer=mapnik&amp;marker=-8.1116%2C-79.0287"
+                style="width: 100%; height: 100%; min-height: 360px; border: 0; border-radius: 1rem;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="ce-footer">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-light border-opacity-10">
+        <div class="col-lg-4">
+          <a href="#inicio" class="brand-lockup mb-3" aria-label="Inicio ClaraElen">
+            <span class="brand-logo-box">
+              <img src="assets/img/logo-claraelen-crop.webp" alt="Logo ClaraElen" width="48" height="48">
+            </span>
+            <span class="brand-text-wrap">
+              <span class="brand-name">ClaraElen</span>
+              <span class="brand-tagline">Restaurante</span>
+            </span>
+          </a>
+          <p class="small mb-3">
+            Restaurante ClaraElen: carta gastronómica, parrilla, coctelería, redes sociales y reservas online.
+          </p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="https://www.instagram.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@claraelen.restaurante" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/51977555420" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3>Secciones</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nuestra Casa</a></li>
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#ambientes">Ambientes</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer">Instagram (@claraelen.restaurante)</a></li>
+            <li><a href="https://www.facebook.com/claraelen.restaurante" target="_blank" rel="noopener noreferrer">Facebook (/claraelen.restaurante)</a></li>
+            <li><a href="https://www.tiktok.com/@claraelen.restaurante" target="_blank" rel="noopener noreferrer">TikTok (@claraelen.restaurante)</a></li>
+            <li><a href="https://wa.me/51977555420" target="_blank" rel="noopener noreferrer">WhatsApp Directo</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3>Contacto &amp; SEO</h3>
+          <ul>
+            <li class="small"><i class="bi bi-shop me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> Restaurante ClaraElen</li>
+            <li class="small"><i class="bi bi-telephone me-1" style="color: var(--ce-purple-bright);" aria-hidden="true"></i> +51 977 555 420</li>
+            <li><a href="sitemap.xml">Sitemap XML</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 small gap-2">
+        <p class="mb-0">&copy; 2026 ClaraElen. Todos los derechos reservados.</p>
+        <p class="mb-0">Sitio web gastronómico listo para producción.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/51977555420?text=Hola%20ClaraElen%2C%20quisiera%20hacer%20una%20reserva%20o%20pedido." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp a ClaraElen">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Modular -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
